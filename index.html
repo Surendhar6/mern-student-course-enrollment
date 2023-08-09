@@ -2,12 +2,75 @@
 <html>
     <head>
         <title>
-            Student Course Enrollment
+            Student Course Enrollment HTML Form
         </title>
+        <link rel="stylesheet" href="assets/styles.css">
     </head>
     <body>
-        <p>
-            Student Course Enrollment
-        </p>
+        <h1>Student Course Enrollment Form</h1>
+        <form id="studentcourseenrollmentForm"><br>
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required><br>
+            <br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br>
+            <br>
+
+            <label for="RegisterNumber">Register Number:</label><br>
+            <input type="text" id="RegisterNumber" name="RegisterNumber" placeholder="Register Number" pattern="2122[0-9]{8}" required><br>
+            <br>
+
+            <label for="MobileNumber">Mobile Number:</label><br>
+            <input type="numberInput" id="MobileNumber" name="Mobile Number" placeholder="Mobile Number" pattern="[6-9]{1}[0-9]{9}" required><br>
+            <br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+
+            <label for="Email-id">Email-id:</label><br>
+            <input type="text" id="Email-id" name="Email-id" placeholder="Email-id" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+            <br>
+
+            <label for="dept">Department:</label><br>
+            <input type="radio" id="cse" name="dept" value="cse" required>
+            <label for="cse">Computer Science and Engineering</label><br>
+            <input type="radio" id="it" name="dept" value="it">
+            <label for="it">Information Technology</label><br>
+            <input type="radio" id="ece" name="dept" value="ece">
+            <label for="ece">Electronics and Communication Engineering</label><br>
+            <input type="radio" id="eee" name="dept" value="eee">
+            <label for="eee">Electrical and Electronics Engineering</label><br>
+            <input type="radio" id="mech" name="dept" value="mech">
+            <label for="mech">Mechanical Engineering</label><br><br>
+
+            <label for="year">Year:</label><br>
+            <select id="year" name="year" required>
+                <option value="1styear">I Year</option>
+                <option value="2ndyear">II Year</option>
+                <option value="3ndyear">III Year</option>
+                <option value="4ndyear">IV Year</option>
+            </select><br>
+            <br>
+
+            <label for="LanguagesKnown">Laanguages Known</label><br>
+            <input type="checkbox" name="C" value="C">C<br>
+            <input type="checkbox" name="C++" value="C++">C++<br>
+            <input type="checkbox" name="Java" value="Java">Java<br>
+            <input type="checkbox" name="Python" value="Python">Python<br>
+            <br>
+
+            <label for="AvailableSlot">Available Slot(s)</label><br>
+            <input type="checkbox" name="10am" value="10am">10am - 12pm<br>
+            <input type="checkbox" name="2pm" value="2pm">2pm - 3pm<br>
+            <input type="checkbox" name="5pm" value="5pm">5pm - 7pm<br>
+            <br>
+
+            <button type="submit">Enroll</button>
+            <br>
+
     </body>
 </html>
